@@ -1,6 +1,6 @@
-import * as chalkModule from 'chalk'
+import chalkModule from 'chalk'
 
-import { ucfirst } from './utils'
+import { ucfirst } from './utils.ts'
 
 type StringMapper = (str: string) => string
 

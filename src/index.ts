@@ -1,7 +1,7 @@
-import { gitStatus, gitStatusFlags } from './git-status'
-import { colorize } from './colors'
-import { ucfirst } from './utils'
-import { colors, promptConfig } from './settings'
+import { gitStatus, gitStatusFlags } from './git-status.ts'
+import { colorize } from './colors.ts'
+import { ucfirst } from './utils.ts'
+import { colors, promptConfig } from './settings.ts'
 
 type PromptInput = {
   cwd: string
