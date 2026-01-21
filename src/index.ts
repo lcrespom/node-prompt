@@ -59,8 +59,8 @@ async function prompt({ cwd, username, hostname }: PromptInput) {
   }
   let path = ''
   if (promptConfig.showPath) path = colorize(colors.path, makePath(cwd))
-  let git = '> '
-  if (promptConfig.showGit) git = (await gitSection()) || '> '
+  let git = ''
+  if (promptConfig.showGit) git = (await gitSection()) || ''
   return userAtHost + ' ' + path + git
 }
 
